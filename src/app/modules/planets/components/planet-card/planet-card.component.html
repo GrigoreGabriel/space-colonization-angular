@@ -1,0 +1,28 @@
+  <div class="card p-3">
+    <div class="d-flex align-items-center">
+      <img 
+        [src]="planet.image"
+        class="rounded-circle me-3 img-fluid"
+        style="width: 7rem; height: 7rem; object-fit: cover;"/>
+      <div>
+        <p class="mb-0">{{planet.description}}</p>  
+        <span class="text-muted ">by captain {{planet.captainName}}</span>
+        <br>
+        <small class="fw-bold">Robots: {{planet.robots}} </small> 
+      </div>
+      <span class="ms-auto text-danger fw-bold" 
+      [ngClass]="{
+        'text-success': planet.statusId === PlanetStatus.OK,
+        'text-danger': planet.statusId === PlanetStatus.NotOk,
+        'text-primary': planet.statusId === PlanetStatus.ToDo,
+        'text-muted': planet.statusId === PlanetStatus.EnRoute
+      }">
+    {{ planet.statusName }}
+</span>
+    </div>
+
+    <div class="d-flex justify-content-between mt-3">
+      <span class="fw-bold">{{planet.name}}</span>
+      <button class="abac-button fw-bold" (click)="redirectToPlanetRoute(planet.planetId)">Edit</button>
+    </div>
+  </div>

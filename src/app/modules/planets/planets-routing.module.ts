@@ -1,17 +1,17 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { PlanetListComponent } from './components/planet-list/planet-list.component';
+import { PlanetEditComponent } from './components/planet-edit/planet-edit.component';
 
 const routes: Routes = [
   {
-    path: 'planets',
+    path: '',
     component: PlanetListComponent,
   },
   {
-    path: 'main',
-    redirectTo: '/planets',
-    pathMatch: 'full'
-  }
+    path: 'planet/:id',
+    component: PlanetEditComponent,
+  },
   
 ];
 

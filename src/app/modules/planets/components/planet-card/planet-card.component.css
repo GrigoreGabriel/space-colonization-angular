@@ -1,0 +1,11 @@
+.card {
+  border-radius: 8px;
+}
+.image{
+  cursor: pointer;
+}
+.abac-button{
+  background-color: rgb(164,88,99);
+  color : white;
+  border-radius: 10px;
+}

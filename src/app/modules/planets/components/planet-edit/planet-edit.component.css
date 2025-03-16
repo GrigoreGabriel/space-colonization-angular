@@ -1,0 +1,22 @@
+.container {
+    max-width: 600px;
+    margin: auto;
+    padding: 15px;
+  }
+  
+  textarea {
+    resize: vertical;
+  }
+  
+  .btn {
+    margin-top: 10px;
+  }
+.abac-button {
+    background-color: rgb(164,88,99);
+    color : white;
+    border-radius: 10px;
+  }
+.back-btn{
+    position: absolute;
+    right:10px;
+}

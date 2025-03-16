@@ -1,1 +1,10 @@
-<p>planet-list works!</p>
+<div class="container my-3">
+    <div class="row justify-content-center">
+      <div class="col-12 col-sm-10 col-md-6 col-lg-4">
+        <planet-card 
+        *ngFor="let planet of planets" 
+        [planet]="planet">
+        </planet-card>
+      </div>
+    </div>
+  </div>
